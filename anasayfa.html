@@ -6,41 +6,12 @@
 		<title> Formula 1 Web Sitesi | Ana Sayfa </title>
 		<meta charset = "UTF-8" >
 		<link rel="stylesheet" href="style.css">
-		
-		<style>
-			
-			.tanıtım{
-				display:grid;
-				grid-template-columns:1fr 1fr;
-				grid-template-areas:"metin resim";
-			}
-			
-			.metin{
-				grid-area:metin;
-				margin:10px;
-			}
-			
-			.resim{
-				grid-area:resim;
-				border:10px solid rgba(255, 255, 255, 0.15);
-				border-radius:5px;
-				margin:30px;
-				display:flex;
-				align-items:center;
-			}
-			
-			.resim img{
-				width:100%;
-			}
-			
-		</style>
-	
 	</head>
 
 	<body>
 	
 		<header>
-			<img src = "resimler/f1.avif" alt="Formula 1 Logo" width="400px" height="200px">
+			<img src = "resimler/f1.avif" alt="Formula 1 Logo">
 		</header>
 		
 		<nav>
@@ -53,8 +24,8 @@
 		
 		<div id="formula1">
 		
-			<div class="tanıtım">
-				<div class="metin">
+			<div class="tanitim">
+				<div class="anasayfa-metin">
 					<h1>Formula 1 Hakkında</h1>
 
 					<p>
@@ -70,13 +41,13 @@
 					</p>
 					
 				</div>
-					<div class="resim">
+					<div class="anasayfa-resim">
 						<img src="resimler/f1race.avif"  alt="F1 Yarışı">
 					</div>
 			</div>
 			
-			<div class="tanıtım">
-				<div class="metin">
+			<div class="tanitim">
+				<div class="anasayfa-metin">
 					<h1>Tarihçe</h1>
 
 					<p>
@@ -92,13 +63,13 @@
 					</p>
 					
 				</div>
-					<div class="resim">
+					<div class="anasayfa-resim">
 						<img src="resimler/oldf1race.avif"  alt="Eski F1 Yarışı">
 					</div>
 			</div>
 			
-			<div class="tanıtım">
-				<div class="metin">
+			<div class="tanitim">
+				<div class="anasayfa-metin">
 				<h1>Formula 1’de Kullanılan Teknoloji</h1>
 
 				<p>
@@ -114,7 +85,7 @@
 				</p>
 				
 				</div>
-					<div class="resim">
+					<div class="anasayfa-resim">
 						<img src="resimler/f1tech.png"  alt="F1 Aerodinamik Teknolojisi">
 					</div>
 			</div>

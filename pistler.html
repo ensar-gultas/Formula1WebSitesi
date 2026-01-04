@@ -6,52 +6,12 @@
 		<title> Formula 1 Web Sitesi | Pistler </title>
 		<meta charset = "UTF-8" >
 		<link rel="stylesheet" href="style.css">
-		
-		<style>
-			
-			.pist-metin-resim{
-				display:grid;
-				grid-template-columns:1fr 2fr 1fr;
-				grid-template-areas:"pist metin resim";
-				margin:20px;
-				margin-bottom:50px;
-				border: 2px solid #94A3B8;
-			}
-			
-			.pist{
-				grid-area:pist;
-			}
-			
-			.pist img{
-				width:100%;
-				height:100%;
-				background-color:#2C3E50;
-			}
-			
-			.metin{
-				grid-area:metin;
-				padding:10px;
-				border-left: 2px solid #94A3B8; 
-				border-right: 2px solid #94A3B8;
-			}
-			
-			.resim{
-				grid-area:resim;
-			}
-			
-			.resim img{
-				width:100%;
-				height:100%;
-			}
-									
-			
-		</style>
 	</head>
 
 	<body>
 	
 		<header>
-			<img src = "resimler/f1.avif" alt="Formula 1 Logo" width="400px" height="200px">	
+			<img src = "resimler/f1.avif" alt="Formula 1 Logo">	
 		</header>
 	
 		<nav>
@@ -427,6 +387,13 @@
 			</div>
 		</div>
 		
+		<h2>Favori Pistin</h2>
+
+			<label>Pist Adı: </label>
+			<input id="favori-pist">
+
+			<button onclick="pistSec()">Gönder</button>
+			
 		<footer>
 			<hr>
 			<p> &copy; 2025 Formula 1 Web Sitesi </p>
@@ -435,6 +402,7 @@
 			<a href="https://www.formula1.com/" target="_blank" title="F1 resmi sitesine gider">buraya</a> tıklayınız.</p>
 		</footer>
 		
+		<script src="script.js"></script>
 	</body>
 	
 </html>

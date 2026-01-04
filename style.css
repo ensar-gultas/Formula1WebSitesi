@@ -1,3 +1,5 @@
+/* GENEL CSS*/
+
 body {
 	background-color:#040720;
 	color:white;
@@ -13,6 +15,11 @@ header{
 	border-width:20px;
 	padding: 10px;
 	text-align:center;
+}
+
+header img{
+	width: 400px;
+	height: 200px;
 }
 
 nav {
@@ -32,4 +39,253 @@ nav a {
 
 footer{
 	background-color:#101830;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+
+
+/*ANASAYFA CSS*/
+.tanitim{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas:"metin resim";
+}
+
+.anasayfa-metin{
+	grid-area:metin;
+	margin:10px;
+}
+
+.anasayfa-resim{
+	grid-area:resim;
+	border:10px solid rgba(255, 255, 255, 0.15);
+	border-radius:5px;
+	margin:30px;
+	display:flex;
+	align-items:center;
+}
+
+.anasayfa-resim img{
+	width:100%;
+}
+
+
+
+/*TAKIMLAR CSS*/
+
+#takimlar{
+	background-color:#101830;
+	margin:25px;
+	padding:20px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.takim{
+	width:200px;
+	height:200px;
+	margin:50px;
+	border:3px solid #c5c6c7;
+}
+
+.takim img{
+	width:200px;
+	height:200px;
+}
+
+
+
+
+#tablo-sampiyon{
+	display:grid;
+	grid-template-columns:2fr 1fr;
+	grid-template-areas:"takimlar-tablo sampiyon-resim";
+}
+
+.takimlar-tablo{
+	grid-area:takimlar-tablo;
+	margin-top:40px;
+	margin-bottom:100px;
+}
+
+.takimlar-tablo h2{
+	margin-left:40px;
+}
+
+.sampiyon-resim{
+	grid-area:sampiyon-resim;
+	margin-top:40px;
+	margin-right:40px;
+	margin-bottom:100px;
+}
+
+.sampiyon-resim img{
+	width:730px;
+	border: 2px solid #D4AF37;
+}
+
+.takim-siralama{
+	border:4px solid rgba(255, 255, 255, 0.15);
+	width:85%;
+	margin-left:40px;
+}
+
+.takim-siralama th {
+	text-align:left;
+	padding:15px;
+	border-bottom: 1px solid red;
+}
+
+.takim-siralama td{
+	justify-content:right;
+	padding:10px 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+#takimlar-hakkinda{
+	margin:30px;
+}
+
+.takim-arac{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas:"takim-metin arac";
+	margin:30px;
+}
+
+.takim-metin{
+	grid-area:takim-metin;
+	margin:10px;
+}
+
+.arac{
+	grid-area:arac;
+	border:10px solid rgba(255, 255, 255, 0.5);
+	display:flex;
+	align-items:center;
+	padding:5px;
+}
+
+.arac img{
+	width:100%;
+}
+
+
+
+/*PİLOTLAR CSS*/
+
+#tablo-pilot{
+	display:grid;
+	grid-template-columns:3fr 1fr;
+	grid-template-areas:"puan sampiyon";
+	margin-top:40px;
+}
+
+.pilot-puan{
+	grid-area:puan;
+}
+
+.sampiyon{
+	grid-area:sampiyon;
+	margin-right:40px;
+	margin-left:20px;
+	margin-bottom:50px;
+}
+
+.sampiyon img{
+	width:100%;
+	height:820px;
+	border: 2px solid #D4AF37;
+}
+
+.pilot-siralama{
+	border:7px solid rgba(255, 255, 255, 0.15);
+	width:100%;
+}
+.pilot-siralama th {
+	text-align:left;
+	padding:15px;
+	border-bottom: 1px solid red;
+}
+
+.pilot-siralama td{
+	padding:7px 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+#pilotlar{
+	margin:30px;
+}
+
+.resim-metin{
+	display:grid;
+	grid-template-columns:1fr 3fr 1fr 3fr;
+	margin-bottom:20px;
+}
+
+.pilot-resim{
+	border: 2px solid #c5c6c7;
+	padding:5px;
+	margin-left:10px;
+	display:flex;
+	justify-content:center;
+	height:550px;
+}
+
+.pilot-metin{
+	border: 2px solid #c5c6c7;
+	padding:15px;
+	margin-right:10px;
+}
+
+.pilot-resim img{
+	width:170px;
+}
+
+
+
+/*PİSTLER CSS*/
+
+.pist-metin-resim{
+	display:grid;
+	grid-template-columns:1fr 2fr 1fr;
+	grid-template-areas:"pist metin resim";
+	margin:20px;
+	margin-bottom:50px;
+	border: 2px solid #94A3B8;
+}
+
+.pist{
+	grid-area:pist;
+}
+
+.pist img{
+	width:100%;
+	height:100%;
+	background-color:#2C3E50;
+}
+
+.metin{
+	grid-area:metin;
+	padding:10px;
+	border-left: 2px solid #94A3B8; 
+	border-right: 2px solid #94A3B8;
+}
+
+.resim{
+	grid-area:resim;
+}
+
+.resim img{
+	width:100%;
+	height:100%;
 }

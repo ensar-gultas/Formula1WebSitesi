@@ -6,121 +6,12 @@
 		<title> Formula 1 Web Sitesi | Takımlar </title>
 		<meta charset = "UTF-8" >
 		<link rel="stylesheet" href="style.css">
-	
-	
-		<style>
-		
-			#takimlar{
-				background-color:#101830;
-				margin:25px;
-				padding:20px;
-				
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-evenly;
-			}
-			
-			.takim{
-				width:200px;
-				height:200px;
-				margin:50px;
-				border:3px solid #c5c6c7;
-			}
-			
-			.takim img{
-				width:200px;
-				height:200px;
-			}
-			
-			
-			
-			
-			#tablo-sampiyon{
-				display:grid;
-				grid-template-columns:2fr 1fr;
-				grid-template-areas:"takimlar-tablo sampiyon-resim";
-			}
-			
-			.takimlar-tablo{
-				grid-area:takimlar-tablo;
-				margin-top:40px;
-				margin-bottom:100px;
-			}
-			
-			.takimlar-tablo h2{
-				margin-left:40px;
-			}
-			
-			.sampiyon-resim{
-				grid-area:sampiyon-resim;
-				margin-top:40px;
-				margin-right:40px;
-				margin-bottom:100px;
-			}
-			
-			.sampiyon-resim img{
-				width:730px;
-				border: 2px solid #D4AF37;
-			}
-			
-			.sıralama{
-				border:4px solid rgba(255, 255, 255, 0.15);
-				width:85%;
-				margin-left:40px;
-			}
-			
-			.sıralama th {
-				text-align:left;
-				padding:15px;
-				border-bottom: 1px solid red;
-			}
-			
-			.sıralama td{
-				justify-content:right;
-				padding:10px 10px;
-				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-			}
-			
-			
-			
-			
-			#takimlar-hakkinda{
-				margin:30px;
-			}
-			
-			.takim-arac{
-				display:grid;
-				grid-template-columns:1fr 1fr;
-				grid-template-areas:"metin arac";
-				margin:30px;
-			}
-			
-			.metin{
-				grid-area:metin;
-				margin:10px;
-			}
-			
-			.arac{
-				grid-area:arac;
-				border:10px solid rgba(255, 255, 255, 0.5);
-				display:flex;
-				align-items:center;
-				padding:5px;
-			}
-			
-			.arac img{
-				width:100%;
-			}
-			
-			
-			
-		</style>
 	</head>
 
 	<body>
 	
 		<header>
-			<img src = "resimler/f1.avif" alt="Formula 1 Logo" width="400px" height="200px">	
+			<img src = "resimler/f1.avif" alt="Formula 1 Logo">	
 		</header>
 	
 		<nav>
@@ -193,7 +84,7 @@
 		<div id="tablo-sampiyon">
 			<div class="takimlar-tablo">
 				<h2>2025 TAKIM SIRALAMASI</h2>
-				<table class="sıralama">
+				<table class="takim-siralama">
 					<tr>
 						<th>SIRA</th>
 						<th>TAKIM</th>
@@ -262,7 +153,7 @@
 		<div id ="takimlar-hakkinda">
 		
 			<div class ="takim-arac">
-				<div class="metin">
+				<div class="takim-metin">
 				<h2>Ferrari</h2>
 				<p>Formula 1 tarihinin tek değişmez ismi olan İtalyan devi, Maranello’daki fabrikasından çıkan her araçta bir ulusun tutkusunu taşıyor. Takım, ikonik kırmızı rengiyle sadece bir yarış ekibi değil, motor sporları dünyasının en prestijli markası ve kültürel bir simge olarak kabul ediliyor.</p>
 				<h3>Pilotlar</h3>
@@ -277,7 +168,7 @@
 			</div>
 				
 			<div class ="takim-arac">
-				<div class="metin">
+				<div class="takim-metin">
 				<h2>Red Bull Racing</h2>
 				<p>Bir enerji içeceği üreticisinden dünya şampiyonuna dönüşen Red Bull, gridin en yenilikçi mühendislik gücü. Adrian Newey’in aerodinamik felsefesiyle şekillenen ekip, kusursuz operasyonel yapısı ve rekor kıran pit stop süreleriyle modern yarış stratejisinin standartlarını belirliyor.</p>
 				<h3>Pilotlar</h3>
@@ -292,7 +183,7 @@
 			</div>
 
 			<div class ="takim-arac">
-				<div class="metin">
+				<div class="takim-metin">
 				<h2>Mercedes</h2>
 				<p>Hibrit çağın başlangıcından itibaren üst üste 8 şampiyonluk kazanarak kırılması güç bir rekora imza atan ekip, Alman mühendislik disiplininin pistlerdeki zirve noktasıdır. Takım, teknolojik inovasyonları ve dayanıklılık odaklı yapısıyla "Gümüş Oklar" efsanesini geleceğe taşıyor.</p>
 				<h3>Pilotlar</h3>
@@ -307,7 +198,7 @@
 			</div>
 			
 			<div class ="takim-arac">
-				<div class="metin">
+				<div class="takim-metin">
 				<h2>McLaren</h2>
 				<p>Bruce McLaren’ın yarışçı ruhuyla temellerini attığı ekip, Woking’deki ileri teknoloji merkeziyle (MTC) bağımsız takımların neler başarabileceğini her yıl yeniden kanıtlıyor. İkonik Papaya turuncusuyla yarışan takım, inovatif geliştirme hızıyla büyük fabrika takımlarına doğrudan meydan okuyor.</p>
 				<h3>Pilotlar</h3>
@@ -322,7 +213,7 @@
 			</div>
 			
 			<div class ="takim-arac">
-				<div class="metin">
+				<div class="takim-metin">
 				<h2>Williams</h2>
 				<p>Dokuz markalar şampiyonluğuyla Formula 1’in en seçkin tarihlerinden birine sahip olan Grove merkezli ekip, köklü bir aile takımından modern bir teknoloji devine dönüşüyor. Takım, saf yarışçılık geleneğini koruyarak veriye dayalı mühendislikle yeniden zirveyi hedefliyor.</p>
 				<h3>Pilotlar</h3>
@@ -337,7 +228,7 @@
 			</div>
 			
 			<div class ="takim-arac">
-				<div class="metin">
+				<div class="takim-metin">
 				<h2>Racing Bulls</h2>
 				<p>Red Bull ailesinin İtalya merkezli ikinci gücü olan ekip, genç yetenekleri yetiştirme misyonunu üst düzey rekabetçi bir yapıyla birleştiriyor. Faenza’daki tesislerinde üretilen yüksek teknolojili araçlarıyla gridin en dinamik takımlarından biri olan VCARB, Red Bull Racing ile olan teknik sinerjisini podyum mücadelesine dönüştürüyor.</p>
 				<h3>Pilotlar</h3>
@@ -352,7 +243,7 @@
 			</div>
 			
 			<div class ="takim-arac">
-				<div class="metin">
+				<div class="takim-metin">
 				<h2>Aston Martin</h2>
 				<p>İngiliz lüks otomobil mirasını, milyar dolarlık yeni nesil tesisleri ve devasa rüzgar tüneli yatırımlarıyla birleştiren ekip, gridin yükselen süper gücü. Lawrence Stroll’un vizyonuyla hareket eden takım, lüks ve saf yarış performansını yeşil renkli gövdesinde buluşturuyor.</p>
 				<h3>Pilotlar</h3>
@@ -367,7 +258,7 @@
 			</div>
 			
 			<div class ="takim-arac">
-				<div class="metin">
+				<div class="takim-metin">
 				<h2>Haas F1 Team</h2>
 				<p>Formula 1’in tek Amerikan takımı olan Haas, sınırlı kaynaklarla büyük işler başarma felsefesiyle tanınıyor. Ferrari ile kurduğu stratejik teknik ortaklık sayesinde gridin en verimli modellerinden birini uygulayan ekip, saf yarışçı karakteri ve agresif gelişim stratejisiyle orta sıraların en dişli rakiplerinden biri konumunda.</p>
 				<h3>Pilotlar</h3>
@@ -382,7 +273,7 @@
 			</div>
 			
 			<div class ="takim-arac">
-				<div class="metin">
+				<div class="takim-metin">
 				<h2>Kick Sauber</h2>
 				<p>İsviçre'nin hassas mühendislik geleneğini pistlere taşıyan Sauber, Formula 1 dünyasının en köklü operasyonlarından birine sahip. Hinwil’deki son teknoloji rüzgar tüneli ve tesisleriyle tanınan ekip, gelecekteki Audi projesi öncesinde yenilikçi tasarımları ve cesur görsel kimliğiyle dikkatleri üzerine çekiyor.</p>
 				<h3>Pilotlar</h3>
@@ -397,7 +288,7 @@
 			</div>
 			
 			<div class ="takim-arac">
-				<div class="metin">
+				<div class="takim-metin">
 				<h2>Alpine</h2>
 				<p>Fransız otomobil devi Renault Grubu'nun yarışçı ruhunu temsil eden Alpine, "mavi" renkleriyle gridde estetik ve performansı birleştiriyor. Enstone ve Viry-Châtillon merkezli iki dev tesisiyle kendi motorunu ve şasisini üreten sınırlı sayıdaki fabrika takımından biri olan ekip, Fransız mühendislik dehasını zirveye taşımayı hedefliyor.</p>
 				<h3>Pilotlar</h3>
@@ -415,7 +306,7 @@
 		<h2>Favori Takımın</h2>
 
 			<label>Takım Adı: </label>
-			<input id="takim">
+			<input id="favori-takim">
 
 			<button onclick="takimSec()">Gönder</button>
 		
@@ -427,12 +318,7 @@
 			<a href="https://www.formula1.com/" target="_blank" title="F1 resmi sitesine gider">buraya</a> tıklayınız.</p>
 		</footer>
 		
-		<script>
-			function takimSec(){
-				let takim = document.getElementById("takim").value;
-				console.log(takim);
-			}
-		</script>
+		<script src="script.js"></script>
 	</body>
 	
 </html>
