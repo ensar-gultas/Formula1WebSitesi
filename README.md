@@ -1,5 +1,3 @@
-# Formula 1 Web Sitesi
-
 # 🏎️ Formula 1 2025 Sezonu Bilgi Platformu
 
 Bu proje, Formula 1 2025 sezonuna özel olarak tasarlanmış; pilotlar, takımlar ve yarış pistleri hakkında kapsamlı teknik bilgiler sunan interaktif bir web platformudur.
