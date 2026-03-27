@@ -15,7 +15,6 @@ Projenin temel amacı, karmaşık spor verilerini (puan durumları, teknik özel
 * **Şampiyona Puan Durumu:** 2025 sezonu Pilotlar ve Takımlar klasmanındaki güncel sıralamalar ve puan tabloları.
 
 ## 🛠️ Teknik Detaylar & Kazanımlar
-CV'deki profesyonel standartlara uygun olarak şu teknik kazanımlar sağlanmıştır:
 * **Semantik HTML5:** Verilerin (özellikle puan tablolarının) arama motoru dostu ve yapılandırılmış bir mimariyle sunulması sağlandı.
 * **Görsel Hiyerarşi:** CSS3 ile renk paleti yönetimi ve tipografi çalışmaları yapılarak, F1'in dinamik ruhuna uygun bir sayfa düzeni (layout) oluşturuldu.
 * **Veri Yerleşimi:** Karmaşık istatistiklerin web standartlarına uygun, temiz ve okunabilir tablolarda sergilenmesi sağlandı.
